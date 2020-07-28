@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Park Hotel situado frente al mar, cerca del Palacio Real y el casco antiguo, a 1 km de la estación central. Ofrece excelentes restaurantes, un spa de lujo gratuito.">
+  <title>Hotel del Parque</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <!-- Menú hamburguesa -->
+      <div class="row">
+        <a href="#"><img src="../Proyecto-Hotel/images/icons/open-menu.png" alt="Menu"></a>
+      </div>
+      <!-- Selector Idioma -->
+      <div class="row">
+        <div class="col-12">
+          <a href="../Proyecto-Hotel/index.html">ESP</a>
+          <a href="../Proyecto-Hotel/en/index.html">ENG</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <hr>
+  <style>
+    .fondo{      
+      background-color: black;
+    }
+  </style>
+<header>
+  <!-- Slider con 3 Imag -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="bxslider">          
+            <img src=https://via.placeholder.com/1600x700?text=SLIDER title="Hotel Park" alt="Slider">          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">        
+        <h2 background-color: green>HOTEL PARK</h2>
+        <img src="../Proyecto-Hotel/images/deco-1.svg" alt="logo Park Hotel" class="fondo">
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img src="../Proyecto-Hotel/images/icons/hotel-bell.png" alt="hotel">
+        <p>Hotel</p>
+      </div>
+      <div class="col-4">
+        <img src="../Proyecto-Hotel/images/icons/apartment.png" alt="apart">
+        <p>Aparts</p>
+      </div>      
+      <div class="col-4">
+        <img src="../Proyecto-Hotel/images/icons/camping-tent.png" alt="camping">
+        <p>Camping</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="#mas-info">MAS INFO</a>
+      </div>
+    </div>
+  </div>  
+</header>
+
+<hr>
+<!-- Contenido Principal -->
+<main>
+  <!-- Sección Mas Info -->
+  <section id="mas-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>BIENVENIDO A PARK HOTEL</h2>
+          <article>
+            <p>El Park Hotel está situado frente al mar, frente al Palacio Real y el casco antiguo, a 1 km de la estación central. Ofrece excelentes restaurantes, un spa de lujo gratuito y conexión inalámbrica a internet gratuita. Las habitaciones del Park Hotel están insonorizadas y cuentan con aire acondicionado y TV LCD con canales vía satélite. Las habitaciones también ofrecen vistas al patio, a la ciudad o al paseo marítimo.</p>
+          </article>
+        </div>
+        <div class="col-4">
+          <img src="../Proyecto-Hotel/images/icons/scooter.png" alt="">
+          <h3>Actividades</h3>
+        </div>
+        <div class="col-4">
+          <img src="../Proyecto-Hotel/images/icons/chef.png" alt="">
+          <h3>Gourmet</h3>
+        </div>
+        <div class="col-4">
+          <img src="../Proyecto-Hotel/images/icons/sunset.png" alt="">
+          <h3>Relax</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <!-- Sección Alojamiento -->
+  <section id="alojamiento">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Alojamiento</h2>
+        </div>
+      </div>
+      <!-- div.row>div.col-4*3>article>img+h3 -->
+      <div class="row">
+        <div class="col-4">
+          <article>
+            <a href="#hotel">
+              <h3>HOTEL</h3>
+            </a>            
+          </article>    
+        </div>
+        <div class="col-4">
+          <article>
+            <a href="#apart">
+              <h3>APART</h3>
+            </a>
+          </article>
+        </div>
+        <div class="col-4">
+          <article>
+            <a href="#camping">
+              <h3>CAMPING</h3>
+            </a>            
+          </article>
+        </div>
+      </div>
+      <!-- Disponibilidad en Hotel -->
+      <div class="row">
+        <div class="col-12">
+          <img src="images/icons/hotel-32px.png" alt="hotel">
+          <h3>DISPONIBILIDAD HOTEL</h3>
+        </div>
+      </div>
+      <div class="row">
+        <!-- FORM -->
+        <form action="procesar-info.php" method="post">
+          <!-- CHECKIN -->
+          <div class="col-6">
+            <input type="date" name="check-in">
+          </div>
+          <!-- CHECKOUT -->
+          <div class="col-6">
+              <input type="date" name="check-out">
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <!-- Standart Single Room -->
+        <div class="col-12">
+            <article>
+              <h3>STANDARD SINGLE ROOM</h3>
+              <img src="images/icons/single-bed.png" alt="single">
+              <p>$220</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div>
+                <img src="images/icons/air-conditioner.png" alt="calefaccion">
+                <img src="images/icons/tv-screen.png" alt="tv">
+                <img src="images/icons/wifi.png" alt="wifi">
+                <img src="images/icons/coffee.png" alt="desayuno">
+                <img src="images/icons/cocktail.png" alt="bar">
+                <img src="images/icons/sun.png" alt="vista al parque">
+                <img src="images/icons/clutery.png" alt="almuerzo">
+              </div>
+              <div>
+                <p>CANTIDAD</p>
+                <select name="cantidad" id="cantidad_familiar">
+                  <option value="valor1">0</option>
+                  <option value="valor2">1</option>
+                  <option value="valor3">2</option>
+                  <option value="valor4">3</option>
+                <select>
+              </div>
+            </article>
+        </div>
+        <!-- Standar Double Room -->
+        <div class="col-12">
+          <article>
+            <h3>STANDARD DOUBLE ROOM</h3>
+            <img src="images/icons/double-bed.png" alt="double">
+            <p>$420</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>             
+              <img src="images/icons/air-conditioner.png" alt="calefaccion">
+              <img src="images/icons/tv-screen.png" alt="tv">
+              <img src="images/icons/wifi.png" alt="wifi">
+              <img src="images/icons/coffee.png" alt="desayuno">
+              <img src="images/icons/cocktail.png" alt="bar">
+              <img src="images/icons/clutery.png" alt="almuerzo">
+            </div>
+            <div>
+              <p>CANTIDAD</p>
+              <select name="cantidad" id="cantidad_familiar">
+                <option value="valor1">0</option>
+                <option value="valor2">1</option>
+                <option value="valor3">2</option>
+                <option value="valor4">3</option>
+              <select>
+            </div>
+          </article>
+        </div>
+        <!-- Luxury Familiar -->
+        <div class="col-12">
+          <article>
+            <h3>LUXURY FAMILY ROOMS</h3>
+            <img src="images/icons/single-bed.png" alt="double">
+            <img src="images/icons/double-bed.png" alt="double">
+            <img src="images/icons/double-bed.png" alt="double">
+            <p>$1220</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>             
+              <img src="images/icons/air-conditioner.png" alt="calefaccion">
+              <img src="images/icons/tv-screen.png" alt="tv">
+              <img src="images/icons/wifi.png" alt="wifi">
+              <img src="images/icons/coffee.png" alt="desayuno">
+              <img src="images/icons/cocktail.png" alt="bar">
+              <img src="images/icons/clutery.png" alt="almuerzo">
+              <img src="images/icons/confidential.png" alt="recepcion privada">
+              <img src="images/icons/swimming.png" alt="pileta privada">
+            </div>
+            <div>
+              <p>CANTIDAD</p>
+              <select name="cantidad" id="cantidad_familiar">
+                <option value="valor1">0</option>
+                <option value="valor2">1</option>
+                <option value="valor3">2</option>
+                <option value="valor4">3</option>
+              <select>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="container">      
+    </div>
+  </section>
+  
+  <!-- Form Contacto -->
+  <aside id="contacto">
+    <div class="container">
+      <form action="procesar-info.php" method="POST">
+        <div class="row">
+        <!-- TENGO DUDAS SI ESTE ANIDAMIENTO DEL FORM POR FUERA DEL DIV ESTA OK--LA INTENCION ES QUE QUEDE DOS COLUMNAS CON LOS INPUT PARA LLENAR -->        
+          <div class="col-6">          
+            <input type="text" placeholder="Nombre" required>
+          </div>
+          <div class="col-6">          
+            <input type="text" placeholder="Apellido" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="col-6">
+            <input type="domicilio" placeholder="Domicilio">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input type="text" placeholder="Codigo Postal" required>
+          </div>
+          <div class="col-6">
+            <input type="text" placeholder="Telefono">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <textarea name="" id="" cols="30" rows="10">Dejenos su mensaje</textarea>
+          </div>
+        </div> 
+        <input type="submit" value="Enviar mensaje">
+      </form>
+    </div>
+  </aside> 
+  <hr>
+  
+</main>
+
+<footer>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10184.603019428716!2d-72.2512218!3d-50.3450935!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa17ac7246faa45c1!2sTremun%20Kau%20Yat%C3%BAn%20Hotel%20de%20Campo!5e0!3m2!1ses!2sar!4v1594770112911!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <div>
+    <p>PARKHOTEL
+      Our hotel offers 113 comfortably furnished rooms and 6 meeting rooms. All the rooms and halls are in range of high-speed Wi-Fi Internet. Additionally, in the hotel operates Restaurant Imperial, Lobby Bar and Car Rental.      
+      Address: 151 East Wacker NY 60601
+      GPS coordinates: 438.135696,317.114645</p>
+  </div>
+</footer>
+
+<hr>
+<!-- Menu- Ver si es modal sino cambiar la clase -->
+<div id="modal-menu" class="modal_mask">
+  <ul>
+    <li><a href="#alojamiento">Alojamiento</a></li>
+    <li><a href="#galeria">Galeria</a></li>       
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</div>  
+</body>
+</html>
